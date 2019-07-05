@@ -47,16 +47,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             holder.gender.setText("Female");
 
         if(holder.dept.getText().toString().equalsIgnoreCase("cse")){
-            holder.hold.setBackgroundColor(R.color.CSE);
+            holder.hold.setBackgroundColor(0xff1faa00);
         }
         else if(holder.dept.getText().toString().equalsIgnoreCase("ece")){
-            holder.hold.setBackgroundColor(R.color.ECE);
+            holder.hold.setBackgroundColor(0xffffa000);
         }
         else if(holder.dept.getText().toString().equalsIgnoreCase("ee")){
-            holder.hold.setBackgroundColor(R.color.EE);
+            holder.hold.setBackgroundColor(0xffab000d);
         }
         else if(holder.dept.getText().toString().equalsIgnoreCase("it")){
-            holder.hold.setBackgroundColor(R.color.IT);
+            holder.hold.setBackgroundColor(0xff1565c0);
         }
     }
 
