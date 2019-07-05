@@ -69,11 +69,11 @@ public class MainActivity extends AppCompatActivity {
             else
                 student.setGender(true);
             realm.commitTransaction();
-            Toast.makeText(mContext, "Success", Toast.LENGTH_SHORT).show();
+            Toast.makeText(mContext, "Your Data is Successfully Saved", Toast.LENGTH_SHORT).show();
         }
         catch (Exception ex){
             realm.cancelTransaction();
-            Toast.makeText(mContext, "Failure" + ex.getMessage(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(mContext, "Failed to Save Data" + ex.getMessage(), Toast.LENGTH_SHORT).show();
         }
 
     }
